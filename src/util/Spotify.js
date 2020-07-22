@@ -1,5 +1,5 @@
 const clientId = process.env.REACT_APP_SPOTIFY_KEY;
-const redirectUri = 'http://localhost:3000';
+const redirectUri = 'https://cryptic-temple-11197.herokuapp.com/';
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 let accessToken = undefined;
 let expiresIn = undefined;

@@ -10,16 +10,13 @@ html {
 
 h1 {
   padding: .77rem 0;
-  background-color: #010c3f;
-  text-align: center;
+  text-align: left;
   font-family: 'Poppins', sans-serif;
   font-size: 1.88rem;
-  color: #fff;
+  color: #000;
+  margin-left: 1rem;
 }
 
-h1 .highlight {
-  color: #6c41ec;
-}
 
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -29,10 +26,10 @@ h2 {
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  background-image: url('./background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: rgb(179,179,180);
+  background: -webkit-linear-gradient(rgba(179,179,180,1) 12%, rgba(153,199,208,1) 100%);
+  background: -o-linear-gradient(rgba(179,179,180,1) 12%, rgba(153,199,208,1) 100%);
+  background: linear-gradient(rgba(179,179,180,1) 12%, rgba(153,199,208,1) 100%);
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   color: #fff;

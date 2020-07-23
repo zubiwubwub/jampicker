@@ -60,7 +60,9 @@ class App extends BaseComponent {
   render() {
     return (
       <div>
-        <h1>Ja<span className="highlight">mmm</span>ing</h1>
+      <header>
+        <h1>Jampicker</h1>
+      </header>
         <div className="App">
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">

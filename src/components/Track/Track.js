@@ -28,6 +28,9 @@ class Track extends BaseComponent {
   render() {
     return (
       <div className="Track">
+      <div className="track-album">
+        <img src={this.props.track.album.images} />
+      </div>
         <div className="Track-information">
           <h3>{this.props.track.name}</h3>
           <p>{this.props.track.artist} | {this.props.track.album}</p>

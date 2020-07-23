@@ -11,14 +11,19 @@
   transition: color .25s;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: #000;
 }
 
 .Track-action:hover {
   color: rgba(265, 265, 265, .5);
 }
 
+.track-album {
+  width: 100px;
+}
+
 .Track-information {
+  color: black;
   margin-bottom: 10px;
   flex-grow: 1;
   display: flex;
@@ -28,12 +33,13 @@
 }
 
 .Track-information h3 {
+  color: black;
   margin-bottom: .22rem;
 }
 
 .Track-information p {
+  color: black;
   margin-top: 5px;
   font-size: .83rem;
   font-weight: 300;
-  color: rgba(256, 256, 256, 0.8);
 }

@@ -1,5 +1,5 @@
 const clientId = process.env.REACT_APP_SPOTIFY_KEY;
-const redirectUri = 'http://localhost:3000';
+const redirectUri = 'http://localhost:3000'; // jampickerzub.surge.sh
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 let accessToken = undefined;
 let expiresIn = undefined;
@@ -38,7 +38,8 @@ const Spotify = {
             artist: track.artists[0].name,
             album: track.album.name,
             uri: track.uri,
-            image: track.album.images[0]
+            images: track.album.images,
+            albumArt: track.album.images[0].url
           }
         })
       });

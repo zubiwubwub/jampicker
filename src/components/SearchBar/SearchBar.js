@@ -20,7 +20,7 @@ class SearchBar extends BaseComponent {
   render() {
     return (
       <div className="SearchBar">
-        <input onChange={this.handleTermChange} placeholder="Enter A Song, Album, or Artist" />
+        <input onChange={this.handleTermChange} placeholder="Search your song" />
       </div>
     );
   }

@@ -28,8 +28,8 @@ class Track extends BaseComponent {
   render() {
     return (
       <div className="Track">
-      <div className="track-album">
-        <img src={this.props.track.album.images} />
+      <div className="track-album" id="content-desktop" >
+        <img src={this.props.track.albumArt} />
       </div>
         <div className="Track-information">
           <h3>{this.props.track.name}</h3>

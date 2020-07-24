@@ -8,7 +8,11 @@ class TrackList extends BaseComponent {
   render() {
     return (
       <div className="TrackList">
-        {this.props.tracks.map(track => <Track key={track.id} track={track} onRemove={this.props.onRemove} onAdd={this.props.onAdd} />)}
+        {this.props.tracks.map(track => <Track key={track.id}
+                                         track={track}
+                                         onRemove={this.props.onRemove}
+                                         onAdd={this.props.onAdd} />
+                                         )}
       </div>
     );
   }

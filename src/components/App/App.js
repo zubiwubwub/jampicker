@@ -60,10 +60,11 @@ class App extends BaseComponent {
   render() {
     return (
       <div>
-      <header>
-        <h1>Jampicker</h1>
-      </header>
         <div className="App">
+          <header className="header">
+            <h1 className="title">Jampicker</h1>
+            <h2 className="descr">Create and save a playlist straight to your Spotify account!</h2>
+          </header>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
